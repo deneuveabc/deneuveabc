@@ -11,13 +11,14 @@ My projects usually start from a real scenario. The translation evaluation, for 
 ## In progress
 
 - **Wenjian, a chat agent (v6.1)** — a local chat app built with FastAPI + GPT-5: the model decides when to search the web or read a page, up to three rounds with parallel tool calls per round. What I care most about is visibility — every step shows which tool was chosen, which page was read, and whether that page's date can actually support the word "latest."
+- **Voyage, an AI pre-translation workbench for travel content** — a local full-stack prototype: DeepSeek drafts, GPT-5 judges independently against a six-dimension rubric, a human review queue checks every line, and only approved items get applied, manually. The division of labor — AI drafts, rules validate, humans decide — is built into the product flow.
 - **Translation evaluation & feedback-driven revision (v0.2)** — a personal synthetic-data experiment: 30 airport/region-name samples through a loop of generation → rule checks + independent AI review → feedback revision → independent retest. All 8 intentionally injected errors were caught and revised; human calibration is still in progress. Honest lesson learned: a translation can match the reference and still hide a corrupted code.
 - **Bead Pattern Maker / 豆豆图纸 (v1.9)** — turns a favorite image into a bead pattern you can actually follow: pick size and palette → generate → fine-tune → export or print, with coordinates, color codes, a supply list, and near-color cleanup. Works fully offline; the optional AI "chibi" illustration keeps your API key in your own browser.
 - **AI translation product decisions** — an anonymized version of research done during employment, comparing an internal system, a lightweight workflow, and an existing platform, with trade-offs and open questions. It shows a thinking process, not a shipped product — I keep that boundary visible on purpose.
 
 ## Also in flight
 
-An email triage prototype (rules + LLM judgment + audit trail) · an English reading tool (article import, tap-to-pronounce) · Girls, Workout Now! (full PRD → local H5 trial build) · a personal website
+An email triage prototype (rules + LLM judgment + audit trail) · an English reading tool (article import, tap-to-pronounce) · an image-insight bookmarklet (send a selected web image to DeepSeek for structured analysis) · Girls, Workout Now! (full PRD → local H5 trial build) · a personal website
 
 ## How I work
 

@@ -1,51 +1,32 @@
-# Hi, I'm Deneuve 👋
+> [English](README.en.md) | 中文
 
-**Product Manager · Global Delivery · Localisation · AI Experiments**
+# 你好，我是 Dennie 👋
 
-I started in technical writing and translation, then moved into product delivery and localisation products. These days, I am also learning by building small tools with AI.
+内容与本地化产品经理，此前做过同传翻译和交付 PM。正在找 AI 产品方向的新机会，同时用业余项目认真练习回答一个问题：
 
-My path so far: **technical writing & translation → global product delivery → content and localisation products → AI experiments**.
+**AI 到底该在哪里出手，哪里必须留给规则和人工？**
 
-It may not look like a straight line, but the thread has stayed the same: understand a messy problem, make it clearer, and find a practical way to move it forward.
+我的项目大多从真实场景出发。比如做翻译质量评测，是因为我想知道：AI 给出的地名译文，业务能直接用吗？名称错了、机场代码被改了、上下文不够时猜了一个答案——这几种情况需要不同的处理方式。
 
-## What I work on
+## 正在推进
 
-### ✍️ Technical communication & translation
+- **问间 · 聊天 Agent（v6.1）** — 用 FastAPI + GPT-5 搭的本地聊天应用：模型自己决定什么时候搜网页、读页面，最多三轮、每轮并行调工具。我最在意的是"看得见"——每一步选了什么工具、读了什么页面、页面的日期撑不撑得起"最新"这个结论，都能在网页上展开看。
+- **翻译质量评测与反馈修订（v0.2）** — 个人合成数据实验：30 条机场/区域名称样本，跑"生成 → 规则检查 + 独立 AI 质检 → 反馈修订 → 独立复测"。8 条故意注入的错误全部被抓到并修订；人工校准还在进行。我也如实记录了学到的一课：文字和参考答案匹配，也可能掩盖代码损坏。
+- **豆豆图纸 · 拼豆图纸生成器（v1.9）** — 把喜欢的图片变成能照着拼的图纸：选尺寸和用色 → 生成 → 微调 → 下载或打印，带坐标色号、用料清单和近色整理。纯本地就能用；想玩 Q 版可以接 AI 插画，但 API Key 只存在自己的浏览器里。
+- **AI 翻译方案决策复盘** — 任职期间方案调研的脱敏版：比较内部系统、轻量流程和现有平台的取舍与待验证项。它展示的是思考过程，不是已上线的成果——这个界限我会一直说清楚。
 
-I began with translation and technical writing. It taught me how to sort through a complex process, decide what matters to the reader, and write something people can actually use. I still rely on those habits when I write requirements, work with different teams, or think about multilingual products.
+## 其他在做
 
-### 🚀 Enterprise product delivery
+邮件分诊原型（规则 + LLM 判断 + 审计日志）· 英文阅读工具（导入文章、点词发音）· Girls, Workout Now!（完整 PRD → 本地 H5 试用版）· 个人主页网站
 
-I have worked on product delivery for international business and engagement scenarios. My work has covered problem framing, PRDs, solution discussions, engineering collaboration, launch support, and follow-up. The interesting part is usually finding a plan that works for users, business teams, and delivery teams at the same time.
+## 我的工作方式
 
-### 🌍 Localisation systems
+先问清楚谁在为什么费劲，再找最小可用的一步：哪里用确定性规则、哪里让 AI 起草、哪里必须人来拍板。每个项目都写明验证日期、样本规模、结果和没做完的部分。
 
-I work on making multilingual content easier to manage: translation quality checks, coverage dashboards, workflow automation, and the product decisions behind them. I care about the details because they are often what make a process reliable in day-to-day work.
+没做完就是没做完。我更愿意让人看到真实进度，而不是包装过的"已完成"。
 
-### ✨ Product experiments
+> 公开仓库和案例文章在陆续整理上架，链接会随发布补上。
 
-I learn by building small things and try to solve problems. Some are prototypes, some are practice projects, and some may never go beyond an experiment. I keep them here because making them has helped me understand whether the solution works and at the same time get to know product and technology better.
+---
 
-Current experiments include:
-
-- **Bead Pattern Maker** — turn an image into an editable, printable bead-pattern guide.
-- **Word Snake Game** — a 60-second vocabulary game that makes English learning playful.
-- **Adaptive Workout Planner** — a beginner-friendly way to turn “I want to exercise” into a manageable session.
-
-### 🤖 AI learning
-
-I am learning AI through courses, reading, tool experiments, and small projects. I want to understand where AI can genuinely help a product, where it cannot, and what still needs to be checked by people. I will keep notes and experiments here as I learn.
-
-## How I work
-
-I usually begin with a few basic questions: who is having trouble, what is making the work difficult, and what is the smallest useful change we can try first? I care about scope—what needs to happen now, what can wait, and how we will know whether the first version helped.
-
-| Area | What you will find |
-| --- | --- |
-| **Enterprise Delivery** | International business, engagement, and platform product cases |
-| **Featured Work** | Localisation tools, dashboards, and product case studies |
-| **Product Experiments** | Vibe-coded prototypes, learning projects, and playable tools |
-| **AI Learning** | Notes, tool experiments, and small projects from my learning journey |
-| **Product Thinking** | Problem framing, decision records, and anonymised product cases |
-
-> Some work is a shipped tool; some is a prototype, a learning project, or a product case study. Every repository states its status and scope clearly.
+[English](README.en.md) | 中文

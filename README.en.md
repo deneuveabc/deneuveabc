@@ -1,33 +1,44 @@
-> 中文 | [English](README.md)
+> English | [中文](README.md)
 
 # Hi, I'm Dennie 👋
 
-I'm a product manager for content and localization, and before that I worked as a translator and a delivery PM. I'm currently looking for new opportunities in AI product management, while using personal projects to practice answering one question:
+Content & Localization Product Manager, formerly a simultaneous interpreter and delivery PM. I'm currently exploring new opportunities in AI product management, using side projects to work through one question seriously:
 
-**Where should AI step in — and where must rules and human judgment stay?**
+> **Where should AI step in—and where do deterministic rules and human judgment need to stay in charge?**
 
-My projects usually start from a real scenario. The translation evaluation, for example, came from a practical question: can a business actually use the place names AI translates? A wrong name, a corrupted airport code, and a guessed answer under missing context each need different handling.
+Most of my projects start from real operational friction. I built a translation quality evaluation experiment because I wanted a straight answer: can a business actually ship AI-translated place names as-is? A wrong name, a corrupted airport code, and a guess made without enough context each fail differently—and require different safeguards.
 
-## In progress
+## Currently Building
 
-- **Wenjian, a chat agent (v6.1)** — a local chat app built with FastAPI + GPT-5: the model decides when to search the web or read a page, up to three rounds with parallel tool calls per round. What I care most about is visibility — every step shows which tool was chosen, which page was read, and whether that page's date can actually support the word "latest."
-- **Voyage, an AI pre-translation workbench for travel content** — a local full-stack prototype: DeepSeek drafts, GPT-5 judges independently against a six-dimension rubric, a human review queue checks every line, and only approved items get applied, manually. The division of labor — AI drafts, rules validate, humans decide — is built into the product flow.
-- **Translation evaluation & feedback-driven revision (v0.2)** — a personal synthetic-data experiment: 30 airport/region-name samples through a loop of generation → rule checks + independent AI review → feedback revision → independent retest. All 8 intentionally injected errors were caught and revised; human calibration is still in progress. Honest lesson learned: a translation can match the reference and still hide a corrupted code.
-- **Bead Pattern Maker / 豆豆图纸 (v1.9)** — turns a favorite image into a bead pattern you can actually follow: pick size and palette → generate → fine-tune → export or print, with coordinates, color codes, a supply list, and near-color cleanup. Works fully offline; the optional AI "chibi" illustration keeps your API key in your own browser.
-- **AI translation product decisions** — an anonymized version of research done during employment, comparing an internal system, a lightweight workflow, and an existing platform, with trade-offs and open questions. It shows a thinking process, not a shipped product — I keep that boundary visible on purpose.
+- **Wenwen · Chat Agent** `v6.1` · `FastAPI` `GPT-5`
+  A local chat app where the model decides when to search the web and read pages (up to 3 rounds, with parallel tool calls per round). What I care about most is **observability**: you can expand every step in the UI to inspect which tools ran, which pages were read, and whether a page's date actually backs up a "latest" claim.
 
-## Also in flight
+- **Voyage · Travel Content Pre-Translation Workbench** · `DeepSeek` `GPT-5`
+  A local full-stack prototype that turns "AI drafts → rules validate → humans decide" directly into a product workflow: DeepSeek produces initial translations, GPT-5 runs an independent 6-dimension evaluation, and human reviewers check items in a queue before batch-applying what passes.
 
-An email triage prototype (rules + LLM judgment + audit trail) · an English reading tool (article import, tap-to-pronounce) · an image-insight bookmarklet (send a selected web image to DeepSeek for structured analysis) · Girls, Workout Now! (full PRD → local H5 trial build) · a personal website
+- **Translation Quality Eval & Feedback Loop** `v0.2`
+  A personal synthetic-data experiment (30 airport and region name samples) running an end-to-end loop: generation → rule checks + independent AI QA → feedback revision → independent re-test. All 8 intentionally injected errors were caught and fixed; human calibration is still underway. One key lesson recorded along the way: **a translation matching the reference text can still mask code corruption**.
 
-## How I work
+- **Doudou Grid · Fuse Bead Pattern Generator** `v1.9`
+  Turns images into build-ready bead patterns: choose dimensions and palette → generate → fine-tune → download or print, complete with coordinate color codes, material lists, and near-color grouping. Runs fully locally; optional AI illustration for chibi styles keeps your API key strictly in your own browser.
 
-First clarify who is struggling with what, then find the smallest useful step: where to use deterministic rules, where to let AI draft, where a human must decide. Every project states its validation date, sample size, results, and unfinished parts.
+- **AI Translation Solution Decision Retrospective**
+  A sanitized write-up of a solution evaluation from my previous role, comparing an in-house build, a lightweight workflow, and existing platforms across trade-offs and open questions. I always keep this boundary clear: **this documents the decision-making process, not a shipped product**.
 
-Unfinished means unfinished. I'd rather show real progress than a polished "done."
+## Other Experiments
 
-> Public repos and case articles are being published progressively; links will be added as each goes live.
+| Project | Description |
+| :--- | :--- |
+| **Email Triage Prototype** | Rule-based logic + LLM classification + audit logging |
+| **English Reading Tool** | Import articles and tap words for pronunciation |
+| **Image Analysis Bookmarklet** | Select any web image for structured analysis via DeepSeek |
+| **Girls, Workout Now!** | Full PRD taken through to a local H5 prototype |
+| **Personal Website** | Personal homepage site |
 
----
+## How I Work
 
-中文 | [English](README.md)
+- Start by getting clear on **who is struggling with what**, then scope the smallest useful step: what belongs to deterministic rules, what AI should draft, and where a human must sign off.
+- Every project documents its **verification date, sample size, actual results, and unfinished parts**.
+- Unfinished means unfinished. I'd rather show real progress than package half-done work as "completed."
+
+> Public repositories and case studies are being organized and published gradually—links will be added as they go live.
